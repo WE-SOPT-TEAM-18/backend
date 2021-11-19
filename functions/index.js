@@ -1,5 +1,5 @@
 const admin = require("firebase-admin");
-const serviceAccount = require("./firebase account");
+const serviceAccount = require("./cs-netflix-firebase-adminsdk-1zkuo-b7ba3405a2.json");
 const dotenv = require("dotenv");
 
 dotenv.config();
