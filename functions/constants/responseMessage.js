@@ -4,7 +4,7 @@ module.exports = {
 
   // 좋아요
   READ_LIKE_CONTENTS_SUCCESS: '좋아요 누른 컨텐츠 조회 성공',
-  ADD_LIKE_CONTENTS_SUCCESS: '컨텐츠 좋아요 성공',
+  ADD_LIKE_CONTENTS_SUCCESS: '컨텐츠 좋아요 및 취소 성공',
 
   // 컨텐츠
   READ_ALL_CONTENTS_SUCCESS: '컨텐츠 조회 성공',

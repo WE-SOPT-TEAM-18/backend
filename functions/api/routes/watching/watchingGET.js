@@ -10,14 +10,7 @@ module.exports = async (req, res) => {
     client = await db.connect(req);
 
     const watching = await watchingDB.getAllWatchings(client);
-    const data = {
-      "contentId" : watching.contentId,
-      "title" : watching.title,
-      "image" : watching.imageRow,
-      "percent" : watching.percent,
-      "isLiked" : watching.isLiked
-    }
-    res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.READ_WATCHING_CONTENTS_SUCCESS, data));
+    res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.READ_WATCHING_CONTENTS_SUCCESS, watching));
   } catch (error) {
     functions.logger.error(`[ERROR] [${req.method.toUpperCase()}] ${req.originalUrl}`, `[CONTENT] ${error}`);
     console.log(error);

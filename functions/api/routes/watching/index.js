@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', require('./contentWatchingGET'));
+router.get('/', require('./watchingGET'));
 
 module.exports = router;
