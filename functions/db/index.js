@@ -1,5 +1,5 @@
 module.exports = {
-    //contentDB: require('./content'),
+    contentDB: require('./content'),
     //likeDB: require('./like'),
     watchingDB: require('./watching')
   };
