@@ -11,4 +11,16 @@ const getContentRanking = async (client) => {
   return convertSnakeToCamel.keysToCamel(rows);
 };
 
-module.exports = { getContentRanking };
+const getContentByCategory = async (client, categoryNum) => {
+  const { rows } = await client.query(
+    `
+    SELECT content_id, title, image_row as image, is_liked FROM "content"
+    WHERE category_num = $1
+    LIMIT 8
+    `,
+    [categoryNum]
+  );
+  return convertSnakeToCamel.keysToCamel(rows);
+};
+
+module.exports = { getContentRanking, getContentByCategory };
