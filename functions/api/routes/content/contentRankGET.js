@@ -6,6 +6,7 @@ const db = require('../../../db/db');
 const { contentDB } = require('../../../db');
 
 module.exports = async (req, res) => {
+  
   try {
     client = await db.connect(req);
 
