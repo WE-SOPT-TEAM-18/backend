@@ -8,7 +8,7 @@ const { likeDB } = require('../../../db');
 
 module.exports = async (req, res) => {
     try {
-      const client = await db.connect(req);
+      client = await db.connect(req);
   
       const likes = await likeDB.getLike(client);
       res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.READ_LIKE_CONTENTS_SUCCESS, likes));
