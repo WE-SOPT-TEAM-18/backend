@@ -142,6 +142,25 @@ main은 모든 작업이 끝난 후 develop에서 merge 시킨다.
 3. 코드 리뷰 후 Confirm 받고 Merge
 4. remote - develop 에 Merge 될 때 마다 **모든 팀원 remote - develop pull** 받아 최신 상태 유지
 
+<br>
+
+#### 📌 Commit Convention
+
+**태그: 제목의 형태**
+
+| 태그 이름| 설명 |
+| :--: | :-----: |
+| FEAT | 새로운 기능을 추가할 경우 |
+| FIX | 버그를 고친 경우 |
+| !BREAKING CHANGE | 커다란 API 변경의 경우 |
+| !HOTFIX | 급하게 치명적인 버그를 고쳐야 하는 경우 |
+| STYLE | 코드 포맷 변경, 세미 콜론 누락, 코드 수정이 없는 경우 |
+| COMMENT | 필요한 주석 추가 및 변경 |
+| DOCS | 문서를 수정한 경우 (ex. README 수정) |
+| RENAME | 파일 혹은 폴더명을 수정하거나 옮기는 작업인 경우 |
+| REMOVE | 파일을 삭제하는 작업만 수행한 경우 |
+| CHORE | 빌드 태스크 업데이트, 패키지 매니저를 설정하는 경우 |
+
 <br><br>
 
 ### 4. 프로젝트 폴더링
