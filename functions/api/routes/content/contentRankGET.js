@@ -13,11 +13,9 @@ module.exports = async (req, res) => {
     client = await db.connect(req);
 
     const contents = await contentDB.getContentRanking(client);
-    const data = {
-      rankImage,
-      contents
-    }
-    res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.READ_CONTENTS_RANK_SUCCESS, data));
+    let i = 0;
+    const data = contents.map(obj => obj.rankImage = rankImage[i++]);
+    res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.READ_CONTENTS_RANK_SUCCESS, contents));
   } catch (error) {
     functions.logger.error(`[ERROR] [${req.method.toUpperCase()}] ${req.originalUrl}`, `[CONTENT] ${error}`);
     console.log(error);
