@@ -6,6 +6,8 @@ const db = require('../../../db/db');
 const { watchingDB } = require('../../../db');
 
 module.exports = async (req, res) => {
+  let client;
+
   try {
     client = await db.connect(req);
 
