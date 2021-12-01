@@ -1,4 +1,5 @@
 module.exports = {
-    userDB: require('./user'),
-    //postDB: require('./post'),
+    contentDB: require('./content'),
+    watchingDB: require('./watching'),
+    likeDB:require('./like'),
   };
