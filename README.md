@@ -132,7 +132,7 @@ main은 모든 작업이 끝난 후 develop에서 merge 시킨다.
 * main - 초기 세팅 존재<br>
 * develop - local 작업 완료 후 merge 브랜치<br>
 * juhyeon - 주현 local 브랜치<br>
-* yurim - 유림 local 브랜치<br>
+* yoorim - 유림 local 브랜치<br>
 * localdevelop_feature/#issue - 각자의 기능 추가 브랜치<br>
 
 —————————————————————————
