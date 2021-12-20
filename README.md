@@ -2,7 +2,7 @@
 🎞 WE-SOPT client &amp; server seminar "NETFLIX"
 
 ### 1. 역할 분담
-#### 💡 [주현](https://github.com/wngus4296): 초기 환경 세팅, DB 설계, API 구현, README 작성
+#### 💡 [주현](https://github.com/wngus4296): 초기 환경 세팅, DB 설계, API 구현, README 작성, WIKI 작성
 #### 💡 [유림](https://github.com/choiyoorim): DB 설계, API 구현
 <br>
 
